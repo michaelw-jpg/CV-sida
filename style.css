@@ -5,6 +5,7 @@
 }
 h1{
     text-align: center;
+    padding-bottom: 1rem;
 }
 nav{
     background-color: green;
@@ -24,12 +25,37 @@ main-layout{
 
 }
 
+
+.close{
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    background-color: red;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+}
+.cv-section{
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    padding: 2rem;
+    border-radius: 2rem;
+}
+
 body{
-    background-image: url(https://lh4.googleusercontent.com/proxy/ILkJPdpJ2xnPhfVIMEX6HUkZlMv8WBgpGrvOpKtR5aMJ74bBxukYzsGXljkSrIYwHxv9ig32UuWQcISwKYgnIJftYay62BYSeCVS);
+    background-image: url(https://e1.pxfuel.com/desktop-wallpaper/271/821/desktop-wallpaper-cv-backgrounds-cv.jpg);
     background-repeat: no-repeat;
     background-size: 100%;
+    background-position: center;
+    background-attachment: fixed;
 }
-h1{
+
+h3{
+    padding-top: 1rem;
     padding-bottom: 1rem;
 }
 h4{
@@ -39,18 +65,80 @@ h4{
 #popup{
     display: none;
     position: fixed;
-    top: 30%;
-    left: 25%;
-    width: 50%;
+    top: 20%;
+    left: 55%;
+    width: 30%;
     height: 50%;
-
-    background-color: rgba(138, 43, 255, 0.61)
+    padding: 1rem;
+    box-sizing: border-box;
+    
+    background-color: rgb(138, 43, 255)
     
 }
+
 
 #popup:target{
     display: block;
 }
+
+#popup1{
+    display: none;
+    position: fixed;
+    top: 20%;
+    left: 15%;
+    width: 30%;
+    height: 50%;
+    padding: 1rem;
+    box-sizing: border-box;
+    
+    background-color: rgb(138, 43, 255)
+    
+}
+#popup1:target{
+    display: block;
+}
+
+#popup2{
+    display: none;
+    position: fixed;
+    top: 40%;
+    left: 15%;
+    width: 30%;
+    height: 50%;
+    padding: 1rem;
+    box-sizing: border-box;
+    
+    background-color: rgb(138, 43, 255)
+    
+}
+#popup2:target{
+    display: block;
+}
+
+#popup3{
+    display: none;
+    position: fixed;
+    top: 40%;
+    left: 55%;
+    width: 30%;
+    height: 50%;
+    padding: 1rem;
+    box-sizing: border-box;
+    
+    background-color: rgb(138, 43, 255)
+    
+}
+#popup3:target{
+    display: block;
+}
+
+.popuplinkbutton{
+    display: flex;
+    justify-content: center; /* Centers horizontally */
+    padding: 1rem;
+    margin-top: 3rem; /* Pushes it to the bottom */
+}
+
 .buttonholder{
     display: flex;
     justify-content: space-between;
@@ -58,6 +146,8 @@ h4{
 }
 section{
 }
+
+
 .card {
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     transition: 0.3s;
@@ -71,7 +161,16 @@ section{
     background-color: white;
     
   }
-  
+  .intro{
+    display: block;
+    
+    text-align: center;
+    font-size: 1.5rem;
+    margin-left: 25%;
+    margin-right: 25%;
+    margin-bottom: 2rem;
+  }
+
   /* Add rounded corners to the top left and the top right corner of the image */
   img {
     border-radius: 5px 5px 0 0;
@@ -100,4 +199,11 @@ nav a{
 nav a:hover{
     background-color: red;
     color: black;
+}
+footer{
+    background-color: green;
+    display: flex;
+    justify-content: center;
+    padding: 0.5rem;
+    margin-top: 1rem;;
 }
