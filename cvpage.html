@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>cvpage</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" media="screen" href="style.css">
+    <script src="script.js" defer></script>
 </head>
 <header>
     <nav>
@@ -88,10 +89,12 @@
                 </p>
             </div>
         </div>
-        <a href="./directory/yourfile.pdf" download="newfilename" class="cv-button">
-            <img src="https://www.iconpacks.net/icons/2/free-pdf-file-icon-3382-thumb.png" alt="">
+        <a href="./cv/CV.pdf" download="CV-michaelWortel" class="cv-button">
+            <img src="./images/pdf-img.png" alt="">
             Ladda ner CV
         </a>
+        <button onclick="window.open('./cv/CV.pdf', '_blank')">Print CV</button>
+
     </section>
     
 </main>

@@ -3,6 +3,8 @@
     padding: 0px;
     margin: 0px;
 }
+
+
 h1{
     text-align: center;
     padding-bottom: 1rem;
@@ -82,7 +84,7 @@ main-layout{
 }
 
 body{
-    background-image: url(https://e1.pxfuel.com/desktop-wallpaper/271/821/desktop-wallpaper-cv-backgrounds-cv.jpg);
+    background-image: url("./images/background.jpg");
     background-repeat: no-repeat;
     background-size: 100%;
     background-position: center;
@@ -248,3 +250,15 @@ footer{
     padding: 0.5rem;
     margin-top: 1rem;;
 }
+
+/* media query for printing */
+
+@media print {
+    body{
+        background-color: white;
+        color: black;
+    }
+    nav{
+        display: none;
+    }
+}  
