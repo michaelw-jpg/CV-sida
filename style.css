@@ -10,7 +10,7 @@ h1{
     padding-bottom: 1rem;
 }
 nav{
-    background-color: green;
+    background-color: rgb(7, 9, 7);
     overflow: hidden;
     text-decoration: none;
     display:flex;
@@ -61,7 +61,7 @@ main-layout{
     color: rgb(42, 4, 149);
 }
 
-.cv-button{
+.cv-button, .print-button{
     display: inline-block;
     background-color: red;
     color: white;
@@ -72,9 +72,9 @@ main-layout{
     font-weight: bold;
 }
 
-.cv-button img{
-    width: 1.5em;
-    height: 1.5em;
+.cv-button img, .print-button img{
+    width: 1.5rem;
+    height: 1.5rem;
     margin-right: 0.5rem;
 }
 
@@ -220,6 +220,12 @@ h4{
     justify-self: center;
   }
 
+  .button-container{
+    display: flex;
+    justify-content: space-between;
+  }
+  
+
 #selected{
    
     
@@ -244,11 +250,12 @@ nav a:hover{
     color: black;
 }
 footer{
-    background-color: green;
+    background-color: rgb(15, 18, 15);
     display: flex;
     justify-content: center;
     padding: 0.5rem;
-    margin-top: 1rem;;
+    margin-top: 1rem;
+    color:white
 }
 
 /* media query for printing */
