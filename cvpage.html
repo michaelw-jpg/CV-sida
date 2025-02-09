@@ -1,124 +1,134 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>cvpage</title>
-    <link rel="stylesheet" media="screen" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" media="screen" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
     <script src="script.js" defer></script>
     <script src="cv-script.js" defer></script>
-</head>
-<header>
+  </head>
+  <header>
     <div class="topnav">
-        <a href="index.html" class="active"><i class="fa-solid fa-house"></i></a>
-        <!-- Navigation links (hidden by default) -->
-        <div id="myLinks">
-          <a href="cvpage.html">CV</a>
-          <a href="skills.html">Kunskaper</a>
-          <a href="portfolio.html">portfolio</a>
-          <a href="contact.html">Kontakt</a>
-        </div>
-        <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
-        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-          <i class="fa fa-bars"></i>
-        </a>
+      <a href="index.html" class="active"><i class="fa-solid fa-house"></i></a>
+      <!-- Navigation links (hidden by default) -->
+      <div id="myLinks">
+        <a href="cvpage.html">CV</a>
+        <a href="skills.html">Kunskaper</a>
+        <a href="portfolio.html">portfolio</a>
+        <a href="contact.html">Kontakt</a>
       </div>
-        <nav>
-        <a href="index.html">Home</a>
-        <a id="selected" href="cvpage.html"> CV</a>
-        <a href="skills.html"> kunskaper</a>
-        <a href="portfolio.html"> Portfolio</a>
-        <a href="contact.html"> Kontakt</a>
-    </nav> 
-</header>
-<body>
-<main>
-    <h1>Mitt CV</h1>
-    <section class = "cv-section">
+      <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+      <a href="javascript:void(0);" class="icon" onclick="hamburgerMenu()">
+        <i class="fa fa-bars"></i>
+      </a>
+    </div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a id="selected" href="cvpage.html"> CV</a>
+      <a href="skills.html"> kunskaper</a>
+      <a href="portfolio.html"> Portfolio</a>
+      <a href="contact.html"> Kontakt</a>
+    </nav>
+  </header>
+  <body>
+    <main>
+      <h1>Mitt CV</h1>
+      <section class="cv-section">
         <div class="education">
-            <h2>
-                <b>Utbildning</b>
-            </h2>
-            <div class="item">
-                <h3>
-                    <b>Fullstack .NET-utvecklare, Chas Academy  2024-2026</b>
-                </h3>
-                <p>
-                    Utbildning inom webbutveckling med fokus på C#, MSSQL och javascript.
-                    Även ramverk så som React .NET Core och entity framework.
-                </p>
-            </div>
-            <div class="item">
-                <h3>
-                    <b>Teknik-programmet, Wenströmska Gymnasie 2008-2011</b>
-                </h3>
-                <p>
-                    Teknikprogrammet med inriktning mot IT och Teknik.
-                </p>
-            </div>
+          <h2>
+            <b>Utbildning</b>
+          </h2>
+          <div class="item">
+            <h3>
+              <b>Fullstack .NET-utvecklare, Chas Academy 2024-2026</b>
+            </h3>
+            <p>
+              Utbildning inom webbutveckling med fokus på C#, MSSQL och
+              javascript. Även ramverk så som React .NET Core och entity
+              framework.
+            </p>
+          </div>
+          <div class="item">
+            <h3>
+              <b>Teknik-programmet, Wenströmska Gymnasie 2008-2011</b>
+            </h3>
+            <p>Teknikprogrammet med inriktning mot IT och Teknik.</p>
+          </div>
         </div>
 
         <div class="work">
-            <h2>
-                <b>Arbetslivserfarenhet</b>
-            </h2>
-            <div class="item">
-                <h3>
-                    <b>Försäkringsrådgivare, FörsäkringsPartner Öst AB, 2019-2023</b>
-                </h3>
-                <p>
-                    Försäkringsrådgivare för Länsförsäkringar. <br>
-                    Ansvarig för att ge råd och sälja försäkringar till privatkunder.<br>
-                    Utöver försäljning hanterade jag även kundsupport för befintliga kunder i diverse ärenden.  
-                                       
-                </p>
-            </div>
-            <div class="item">
-                <h3>
-                    <b>Kommunikatör, Silentium AB 2015-2019</b>
-                </h3>
-                <p>
-                    Kommunikatör för Silentium AB. <br>
-                    Arbetade främst med försäljning med diverse olika företag främst till privatpersoner. <br>
-                    Inklusive Telia telefoni/bredband, Boxer TV-abonnemang och bredband, Hyresgästföreningen medlemskap och försäkringar.
+          <h2>
+            <b>Arbetslivserfarenhet</b>
+          </h2>
+          <div class="item">
+            <h3>
+              <b>Försäkringsrådgivare, FörsäkringsPartner Öst AB, 2019-2023</b>
+            </h3>
+            <p>
+              Försäkringsrådgivare för Länsförsäkringar. <br />
+              Ansvarig för att ge råd och sälja försäkringar till
+              privatkunder.<br />
+              Utöver försäljning hanterade jag även kundsupport för befintliga
+              kunder i diverse ärenden.
+            </p>
+          </div>
+          <div class="item">
+            <h3>
+              <b>Kommunikatör, Silentium AB 2015-2019</b>
+            </h3>
+            <p>
+              Kommunikatör för Silentium AB. <br />
+              Arbetade främst med försäljning med diverse olika företag främst
+              till privatpersoner. <br />
+              Inklusive Telia telefoni/bredband, Boxer TV-abonnemang och
+              bredband, Hyresgästföreningen medlemskap och försäkringar.
+            </p>
+          </div>
+          <div class="item">
+            <h3>
+              <b>Vårdbiträde, Västerås Stad 2014-2015</b>
+            </h3>
+            <p>
+              Arbetade som vårdbiträde på äldreboende i Västerås.<br />
+              Ansvarig för att hjälpa till med personlig omvårdnad och
+              städning.<br />
+            </p>
+          </div>
 
-                </p>
-            </div>
-            <div class="item">
-                <h3>
-                    <b>Vårdbiträde, Västerås Stad 2014-2015</b>
-                </h3>
-                <p>
-                    Arbetade som vårdbiträde på äldreboende i Västerås.<br>
-                    Ansvarig för att hjälpa till med personlig omvårdnad och städning.<br>
-                </p>
-            </div>
-            
-            <div class="item">
-                <h3>
-                    <b>Fritidsledare Malmabergskolan, Västerås 2013-2014</b>
-                </h3>
-                <p> 
-                Arbetade som fritidsledare på Malmabergskolan i Västerås.<br>
-                Agerade som stöd för barnen i deras fritidsaktiviteter och hjälpte till med läxläsning.
-                </p>
-            </div>
+          <div class="item">
+            <h3>
+              <b>Fritidsledare Malmabergskolan, Västerås 2013-2014</b>
+            </h3>
+            <p>
+              Arbetade som fritidsledare på Malmabergskolan i Västerås.<br />
+              Agerade som stöd för barnen i deras fritidsaktiviteter och hjälpte
+              till med läxläsning.
+            </p>
+          </div>
         </div>
         <div class="button-container">
-            <a href="./cv/CV.pdf" download="CV-michaelWortel" class="cv-button">
-                <img src="./images/pdf-img.png" alt="">
-                Ladda ner CV
-            </a>
-        <button class="print-button" onclick="window.open('./cv/CV.pdf', '_blank')">
-            <img src="./images/9110794_printer_icon.png" alt="">
-            Skriv ut CV</button>
+          <a href="./cv/CV.pdf" download="CV-michaelWortel" class="cv-button">
+            <img src="./images/pdf-img.png" alt="" />
+            Ladda ner CV
+          </a>
+          <button
+            class="print-button"
+            onclick="window.open('./cv/CV.pdf', '_blank')"
+          >
+            <img src="./images/9110794_printer_icon.png" alt="" />
+            Skriv ut CV
+          </button>
         </div>
-   
-
-    </section>
-    <footer>Made by Michael wortel 2025</footer>
-</main>
-<!-- <footer>blablabla</footer> -->
-</body>
+      </section>
+      <footer>
+        Made by Michael&nbsp;
+        <button class="easter" onclick="changeColor()">W</button>ortel 2025
+      </footer>
+    </main>
+  </body>
 </html>

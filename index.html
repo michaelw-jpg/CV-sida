@@ -1,54 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Homepage</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
     <script src="script.js" defer></script>
-</head>
+  </head>
 
-
-<body>
+  <body>
     <header>
-        <div class="topnav">
-            <a href="index.html" class="active"><i class="fa-solid fa-house"></i></a>
-            <!-- Navigation links (hidden by default) -->
-            <div id="myLinks">
-              <a href="cvpage.html">CV</a>
-              <a href="skills.html">Kunskaper</a>
-              <a href="portfolio.html">portfolio</a>
-              <a href="contact.html">Kontakt</a>
-            </div>
-            <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
-            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-              <i class="fa fa-bars"></i>
-            </a>
-          </div>
-        
-        <nav>
-            <a id="selected" href="index.html"><b> Home</b></a> 
-            <a href="cvpage.html"> CV</a>
-            <a href="skills.html"> kunskaper</a>
-            <a href="portfolio.html"> Portfolio</a>
-            <a href="contact.html"> Kontakt</a>
-        </nav> 
+      <div class="topnav">
+        <a href="index.html" class="active"
+          ><i class="fa-solid fa-house"></i
+        ></a>
+        <!-- Navigation links (hidden by default) -->
+        <div id="myLinks">
+          <a href="cvpage.html">CV</a>
+          <a href="skills.html">Kunskaper</a>
+          <a href="portfolio.html">portfolio</a>
+          <a href="contact.html">Kontakt</a>
+        </div>
+        <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+        <a href="javascript:void(0);" class="icon" onclick="hamburgerMenu()">
+          <i class="fa fa-bars"></i>
+        </a>
+      </div>
+
+      <nav>
+        <a id="selected" href="index.html"><b> Home</b></a>
+        <a href="cvpage.html"> CV</a>
+        <a href="skills.html"> kunskaper</a>
+        <a href="portfolio.html"> Portfolio</a>
+        <a href="contact.html"> Kontakt</a>
+      </nav>
     </header>
     <main>
-        <h1 style="text-align: center;">Välkommen till min C<button class="easter" onclick="changeColor()">V
-        </button> sida</h1>
-        <p class="intro">Hej! Jag heter Michael och studerar just nu till .NET fullstack utvecklare på chas academy
-          Jag har alltid haft ett intresse för teknik och har nu möjligheten att studera och inom sin tid 
-          arbeta inom ett område som jag brinner för.  
-        </p>
-        <p class="intro"> Jag har tidigare erfarenhet av att arbeta inom service och kundtjänst vilket jag tror kommer vara en stor fördel
-          i mitt framtida arbete som utvecklare då jag är van att arbeta med människor och att lösa problem.
-        </p>
+      <h1 style="text-align: center">Välkommen till min CV sida</h1>
+      <p class="intro">
+        Hej! Jag heter Michael och studerar just nu till .NET fullstack
+        utvecklare på chas academy Jag har alltid haft ett intresse för teknik
+        och har nu möjligheten att studera och inom sin tid arbeta inom ett
+        område som jag brinner för.
+      </p>
+      <p class="intro">
+        Jag har tidigare erfarenhet av att arbeta inom service och kundtjänst
+        vilket jag tror kommer vara en stor fördel i mitt framtida arbete som
+        utvecklare då jag är van att arbeta med människor och att lösa problem.
+      </p>
     </main>
-    <footer>
-        Made by Michael wortel 2025
+    <footer style="bottom: 0; position: fixed; width: 100%">
+      <!-- style for footer to anchor it to bottom of page, breaks on this page otherwise for some reason -->
+      Made by Michael&nbsp;
+      <button class="easter" onclick="changeColor()">W</button>ortel 2025
     </footer>
-
-</body>
+  </body>
 </html>

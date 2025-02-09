@@ -1,86 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>skills</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
     <script src="script.js" defer></script>
-    
-</head>
-<header>
+  </head>
+  <header>
     <div class="topnav">
-        <a href="index.html" class="active"><i class="fa-solid fa-house"></i></a>
-        <!-- Navigation links (hidden by default) -->
-        <div id="myLinks">
-          <a href="cvpage.html">CV</a>
-          <a href="skills.html">Kunskaper</a>
-          <a href="portfolio.html">portfolio</a>
-          <a href="contact.html">Kontakt</a>
-        </div>
-        <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
-        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-          <i class="fa fa-bars"></i>
-        </a>
+      <a href="index.html" class="active"><i class="fa-solid fa-house"></i></a>
+      <!-- Navigation links (hidden by default) -->
+      <div id="myLinks">
+        <a href="cvpage.html">CV</a>
+        <a href="skills.html">Kunskaper</a>
+        <a href="portfolio.html">portfolio</a>
+        <a href="contact.html">Kontakt</a>
       </div>
-    
+      <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+      <a href="javascript:void(0);" class="icon" onclick="hamburgerMenu()">
+        <i class="fa fa-bars"></i>
+      </a>
+    </div>
+
     <nav>
-        <a href="index.html">Home</a>
-        <a href="cvpage.html"> CV</a>
-        <a id="selected" href="skills.html"> kunskaper</a>
-        <a href="portfolio.html"> Portfolio</a>
-        <a href="contact.html"> Kontakt</a>
-    </nav> 
-</header>
-<body>
+      <a href="index.html">Home</a>
+      <a href="cvpage.html"> CV</a>
+      <a id="selected" href="skills.html"> kunskaper</a>
+      <a href="portfolio.html"> Portfolio</a>
+      <a href="contact.html"> Kontakt</a>
+    </nav>
+  </header>
+  <body>
     <section class="cv-section">
-        <div class="skills">
-            <h2>
-                <b>Programmeringsspråk</b>
-            </h2>
-            <div class="item">
-                <h3>
-                    <b>C#</b>
-                </h3>
-                <p>
-                    Jag har arbetat med C# i två år och har erfarenhet av att skapa konsolapplikationer och webbapplikationer med hjälp av .NET Core.
-                </p>
-            </div>
-            <div class="item">
-                <h3>
-                    <b>JavaScript</b>
-                </h3>
-                <p>
-                    Jag har arbetat med JavaScript i ett år och har erfarenhet av att skapa webbapplikationer med hjälp av React.
-                </p>
-            </div>
-            <div class="item">
-                <h3>
-                    <b>MSSQL</b>
-                </h3>
-                <p>
-                    Jag har arbetat med SQL i ett år och har erfarenhet av att skapa databaser och skriva SQL-frågor. 
-                    Även integrerat databaser till utvecklingsmiljöoer så som C# via entity framework.
-                </p>
-            </div>
-            <h3>HTML/CSS</h3>
-            <div class="item">
-                <p>
-                    Genom skolgången har vi arbetat med diverse olika projekt och skapat flera hemsidor utvecklat våra kunskaper inom ren CSS/HTML
-                    Vi har även utnyttjat ramverk så som Bootstrap och Tailwind.
-                </p>
-            </div>
-            
-            <h3>Git</h3>
-            <div class="item">
-                <p>
-                    Jag har arbetat med Git under hela min utbildning hos Chas Academy och har erfarenhet av versions hantering och samarbeta
-                     med andra studenter i diverese grupp-projekt
-                </p>
-            </div>
+      <div class="skills">
+        <h2>
+          <b>Programmeringsspråk</b>
+        </h2>
+        <div class="item">
+          <h3>
+            <b>C#</b>
+          </h3>
+          <p>
+            Jag har arbetat med C# i två år och har erfarenhet av att skapa
+            konsolapplikationer och webbapplikationer med hjälp av .NET Core.
+          </p>
         </div>
+        <div class="item">
+          <h3>
+            <b>JavaScript</b>
+          </h3>
+          <p>
+            Jag har arbetat med JavaScript i ett år och har erfarenhet av att
+            skapa webbapplikationer med hjälp av React.
+          </p>
+        </div>
+        <div class="item">
+          <h3>
+            <b>MSSQL</b>
+          </h3>
+          <p>
+            Jag har arbetat med SQL i ett år och har erfarenhet av att skapa
+            databaser och skriva SQL-frågor. Även integrerat databaser till
+            utvecklingsmiljöoer så som C# via entity framework.
+          </p>
+        </div>
+        <h3>HTML/CSS</h3>
+        <div class="item">
+          <p>
+            Genom skolgången har vi arbetat med diverse olika projekt och skapat
+            flera hemsidor utvecklat våra kunskaper inom ren CSS/HTML Vi har
+            även utnyttjat ramverk så som Bootstrap och Tailwind.
+          </p>
+        </div>
+
+        <h3>Git</h3>
+        <div class="item">
+          <p>
+            Jag har arbetat med Git under hela min utbildning hos Chas Academy
+            och har erfarenhet av versions hantering och samarbeta med andra
+            studenter i diverese grupp-projekt
+          </p>
+        </div>
+      </div>
     </section>
-    <footer>Made by Michael wortel 2025</footer>
-</body>
+    <footer>
+      Made by Michael&nbsp;
+      <button class="easter" onclick="changeColor()">W</button>ortel 2025
+    </footer>
+  </body>
 </html>
